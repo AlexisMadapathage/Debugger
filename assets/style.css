@@ -19,7 +19,17 @@ body {
 }
 
 .top-header .name {
-	font-size: 26px;
+	text-align: center;
+}
+
+.top-header .name .name_main {
+	font-size: 32 px;
+	font-weight: bold;
+}
+
+.top-header .name .name_sub {
+	font-size: 20px;
+	font-weight: normal;
 }
 
 .nav ul {
