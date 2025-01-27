@@ -64,17 +64,17 @@ body {
 .carousel-inner {
 	position: relative;
 	width: 100%;
-	max-height: 600px; /* Limite la hauteur */
+	max-height: 600px; 
 	overflow: hidden;
   }
   
-  /* Images dans le carousel */
+ 
   .carousel-inner img {
 	width: 100%;
-	height: auto; /* Respecte les proportions */
-	aspect-ratio: 1298 / 600; /* Définit le ratio d'aspect des images */
-	object-fit: cover; /* S'assure que l'image s'adapte bien au conteneur */
-	display: block; /* Empêche les espaces blancs sous les images */
+	height: auto; 
+	aspect-ratio: 1298 / 600; 
+	object-fit: cover; 
+	display: block; 
   }
 
 #about {
@@ -125,9 +125,6 @@ body {
 	font-size: 14px;
 }
 
-/*#gallery {
-	/*	min-height: 100vh; */
-/*}*/
 .title{
 	text-align: center;
 	padding-block: 2em;
