@@ -26,7 +26,11 @@
 	<meta name="twitter:creator" content="@ninacarducci">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<!-- précharge la ressource et applique la feuille de style après le chargement -->
+	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+	<!-- Assure que la feuille de style sera chargée même si JavaScript est désactivé -->
+	<noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"></noscript>
+
 	<link rel="stylesheet" href="./assets/style.min.css"> <!-- minifier style.css -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,9 +76,9 @@
 		}
 		</script>
 
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.min.js" defer></script> <!-- minifier maugallery.js -->
 	<script src="./assets/scripts.min.js" defer></script> <!-- minifier scripts.js -->
 
