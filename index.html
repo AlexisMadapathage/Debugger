@@ -26,8 +26,8 @@
 	<meta name="twitter:creator" content="@ninacarducci">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/style.css"> <!-- minifier style.css -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -40,8 +40,8 @@
 		  "@type": "ProfessionalService",
 		  "name": "Nina Carducci - Photographe professionnelle",
 		  "description": "Découvrez le travail de Nina Carducci, photographe professionnelle spécialisée dans les mariages, portraits et événements à Bordeaux et ses environs.",
-		  "image": "https://www.example.com/assets/images/nina.webp", 
-		  "url": "https://www.example.com",
+		  "image": "https://alexismadapathage.github.io/Debugger/assets/images/nina.webp", 
+		  "url": "https://alexismadapathage.github.io/Debugger/",
 		  "telephone": "+33 5 56 67 78 89",
 		  "address": {
 			"@type": "PostalAddress",
@@ -72,20 +72,20 @@
 		}
 		</script>
 
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.min.js"></script> <!-- minifier maugallery.js -->
-	<script src="./assets/scripts.min.js"></script> <!-- minifier scripts.js -->
+	<script src="./assets/maugallery.min.js" defer></script> <!-- minifier maugallery.js -->
+	<script src="./assets/scripts.min.js" defer></script> <!-- minifier scripts.js -->
 
 </head>
 
 <body>
 	<header class="top-header">
-		<h1 class="name">
-			<span class="name_main">Nina Carducci</span>
+		<div class="name">
+			<h1 class="name_main">Nina Carducci</h1>
 			<span class="name_sub">Photographe professionnelle</span>
-		</h1>
+		</div>
 		<nav class="nav">
 			<ul>
 				<li><a href="#about">À propos</a></li>
